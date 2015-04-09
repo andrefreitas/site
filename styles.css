@@ -76,13 +76,13 @@ header {
 
 .section {
   padding: 100px 0;
-  line-height: 1.6; }
+  line-height: 1.6;
+  text-align: center; }
   .section h1 {
     font-size: 3em;
     color: #21759b;
     margin-bottom: 50px; }
   .section .headline {
-    text-align: left;
     font-size: 1.875rem;
     line-height: 1.6;
     font-weight: 300;
@@ -93,12 +93,15 @@ header {
   background: #21759b;
   color: white;
   text-align: center; }
-  .skills h1 {
+  .skills h1 a {
     color: white; }
+  .skills img {
+    height: 170px; }
   .skills .skill {
     text-align: center;
     display: inline-block;
-    padding: 50px; }
+    padding: 50px;
+    font-size: 1.875rem; }
 
 .projects .list {
   text-align: center; }
@@ -129,3 +132,42 @@ header {
       display: inline-block;
       vertical-align: middle;
       display: none; }
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: auto;
+    padding: 0 20px; }
+
+  nav {
+    text-align: center; }
+    nav .menu {
+      display: none; }
+
+  header {
+    background: url("img/andrefreitas.jpg") no-repeat black;
+    background-position: center;
+    background-size: auto 600px;
+    height: 500px; }
+    header .wrapper .center {
+      text-align: center; }
+
+  .section h1 {
+    font-size: 2em; }
+  .section .headline {
+    font-size: 1.3rem; }
+
+  .skills img {
+    height: 150px; }
+  .skills .skill {
+    font-size: 1.3rem; }
+
+  .section {
+    padding: 50px 0; } }
+@media screen and (max-width: 500px) {
+  .projects .project {
+    display: block;
+    margin: 0;
+    margin-bottom: 20px; }
+    .projects .project img {
+      width: 100%;
+      height: auto; } }
