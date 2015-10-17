@@ -1,4 +1,4 @@
-# andrefreitas-pt
+# site
 This is my personal website developed with plain HTML, CSS and JS.
 
 # Watch
