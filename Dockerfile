@@ -1,2 +1,7 @@
-FROM nginx
-ADD . /usr/share/nginx/html
+FROM scratch
+
+ADD src /src
+ADD server /
+
+WORKDIR /src
+ENTRYPOINT ["/server"]

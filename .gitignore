@@ -52,3 +52,5 @@ blog/cache
 
 .sass-cache
 styles.css.map
+
+server

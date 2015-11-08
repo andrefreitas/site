@@ -1,11 +1,17 @@
-watch:
-	sass --watch styles.sass:styles.css --style compressed
+IMAGE=tutum.co/andrefreitas/site
+VERSION=latest
 
-build:
-	docker build -t andrefreitas.pt/site .
+linux:
+	GOOS=linux GOARCH=amd64 go build server.go
+
+build: linux
+	docker build -t $(IMAGE):$(VERSION) .
 
 push:
-	docker push andrefreitas.pt/site
+	docker push $(IMAGE):$(VERSION)
 
-serve:
-	python3 -m http.server 8001
+dev: linux
+	docker-compose up dev
+
+watch:
+	sass --watch src/styles.sass:src/styles.css --style compressed

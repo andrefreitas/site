@@ -1,17 +1,9 @@
-# site
+# Site
 This is my personal website developed with plain HTML, CSS and JS.
 
-# Watch
-    make watch
+# Usage
+    make dev watch -j2
 
-# Serve
-    make serve
-
-# Docker
-Build image with:
-
+# Build
     make build
-
-Push image with
-
-    make push
+    
