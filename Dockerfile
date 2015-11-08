@@ -1,7 +1,7 @@
 FROM scratch
 
-ADD src /src
-ADD server /
+COPY src /src
+COPY server /
 
 WORKDIR /src
 ENTRYPOINT ["/server"]
