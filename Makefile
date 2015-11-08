@@ -13,5 +13,7 @@ push:
 dev: linux
 	docker-compose up dev
 
+deploy: build push
+
 watch:
 	sass --watch src/styles.sass:src/styles.css --style compressed
