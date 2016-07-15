@@ -2,17 +2,11 @@
 This is my personal website developed with plain HTML, CSS and JS.
 
 # Usage
-Launch a development container with:
+Launch a development server with:
 
-    make dev watch -j2
+    make serve
 
 # Build
-Build Docker image with:
+Build and push Docker image with:
 
-    make build
-
-# Deploy
-Publish image and deploy to servers with:
-
-
-    make deploy
+    make build push

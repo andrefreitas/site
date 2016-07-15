@@ -1,11 +1,4 @@
 site:
-  image: tutum.co/andrefreitas/site
+  image: andrefreitas/site
   ports:
-    - "8001:80"
-
-dev:
-  build: .
-  ports:
-    - "8001:80"
-  volumes:
-    - ./src:/src
+    - "80:80"

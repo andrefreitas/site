@@ -1,19 +1,17 @@
-IMAGE=tutum.co/andrefreitas/site
-VERSION=latest
+DOCKER_REPOSITORY=andrefreitas/site
 
-linux:
-	GOOS=linux GOARCH=amd64 go build server.go
-
-build: linux
-	docker build -t $(IMAGE):$(VERSION) .
+build:
+	sass styles.sass:styles.css --style compressed
+	docker build -t $(DOCKER_REPOSITORY) .
 
 push:
-	docker push $(IMAGE):$(VERSION)
+	docker push $(DOCKER_REPOSITORY)
 
-dev: linux
-	docker-compose up dev
+serve:
+	make serve-http watch -j2
 
-deploy: build push
+serve-http:
+	python3 -m http.server
 
 watch:
-	sass --watch src/styles.sass:src/styles.css --style compressed
+	sass --watch styles.sass:styles.css --style compressed

@@ -1,7 +1,2 @@
-FROM scratch
-
-COPY src /src
-COPY server /
-
-WORKDIR /src
-ENTRYPOINT ["/server"]
+FROM nginx:alpine
+COPY . /etc/nginx/html
