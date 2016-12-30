@@ -1,4 +1,0 @@
-site:
-  image: andrefreitas/site
-  ports:
-    - "80:80"
