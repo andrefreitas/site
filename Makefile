@@ -1,4 +1,4 @@
-DOCKER_REPOSITORY=andrefreitas/site
+DOCKER_REPOSITORY=docker.andrefreitas.pt/site
 
 build:
 	sass styles.sass:styles.css --style compressed
