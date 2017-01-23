@@ -1,10 +1,10 @@
 DOCKER_REPOSITORY=docker.andrefreitas.pt/site
 
-build:
+docker-build:
 	sass styles.sass:styles.css --style compressed
 	docker build -t $(DOCKER_REPOSITORY) .
 
-push:
+docker-push:
 	docker push $(DOCKER_REPOSITORY)
 
 serve:
