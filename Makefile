@@ -11,7 +11,7 @@ serve:
 	make serve-http watch -j2
 
 serve-http:
-	python3 -m http.server
+	python3 -m http.server 4001
 
 watch:
 	sass --watch styles.sass:styles.css --style compressed
