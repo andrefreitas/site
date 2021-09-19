@@ -1,33 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head lang="pt">
-    <meta charset="UTF-8">
-    <title>André Freitas</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,500,700italic,700,900,900italic' rel='stylesheet' type='text/css'>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1.0, user-scalable=no">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-</head>
-<body>
-
-<nav>
-    <div class="container">
-        <div class="logo">
-            <img class="avatar" src="img/avatar.jpg" height="50px">
-            <div class="text">
-                <span class="name">André Freitas</span> <br/>
-                <span class="bio">Software Engineer</span>
-            </div>
-        </div>
-
-        <div class="menu">
-            <a href="#about">about me</a>
-            <a href="#skills">skills</a>
-            <a href="#contacts">contacts</a>
-        </div>
-
-    </div>
-</nav>
+---
+layout: default
+title: André Freitas
+---
 
 <header>
     <div class="wrapper">
@@ -47,7 +21,7 @@
             I'm a Freelance Software Engineer <br/>
             that gets <b>things done</b>.
         </div>
-        
+
         I'm a Software Engineer living in Porto. I created a company and
         worked for NDrive, Talkdesk and Beyond Pricing. I also collaborated with Google as Student Ambassador and was an active IEEE volunteer.
     </div>
@@ -57,24 +31,24 @@
     <div class="container">
         <h1><a name="skills">Experience</a></h1>
         <div class="skill">
-            <img src="img/backend-skill.svg" height="100px"> <br/>
+            <img src="/assets/images/backend-skill.svg" height="100px"> <br/>
             <span class="title">Backend Development</span><br/>
             <span class="description">Python, Ruby, Go, PHP, Node, Elixir, Scala</span>
         </div>
         <div class="skill">
-            <img src="img/systems-icon.svg" height="100px"> <br/>
+            <img src="/assets/images/systems-icon.svg" height="100px"> <br/>
             <span class="title">Devops</span> <br/>
             <span class="description">Docker, Linux, Kubernetes, Infrastructure as Code</span>
         </div>
 
         <div class="skill">
-            <img src="img/uiux.svg" height="100px"> <br/>
+            <img src="/assets/images/uiux.svg" height="100px"> <br/>
             <span class="title">Frontend Development</span> <br />
             VueJS, AngularJS
         </div>
 
         <div class="skill">
-            <img src="img/cloud-icon.svg" height="100px"> <br/>
+            <img src="/assets/images/cloud-icon.svg" height="100px"> <br/>
             <span class="title">Public Clouds</span> <br/>
             AWS, Linode, Heroku, Google Cloud
         </div>
@@ -83,44 +57,7 @@
 
 <div class="section keys">
       <p>
-        <a href="files/andrefreitas.pub">Public SSH Key</a> /
-        <a href="files/andrefreitas.gpg">Public GPG Key</a>
+        <a href="/assets/files/andrefreitas.pub">Public SSH Key</a> /
+        <a href="/assets/files/andrefreitas.gpg">Public GPG Key</a>
       </p>
 </div>
-
-<div class="section footer">
-    <div class="container">
-        <p><b>You can drop me an email or follow me at</b></p>
-        <br/>
-        <a name="contacts"></a>
-        <a href="mailto:p.andrefreitas@gmail.com"><div class="contact">
-            <img src="img/email.svg" height="30px">
-            <span>Email</span>
-        </div>
-        </a>
-
-        <a href="http://github.com/andrefreitas" target="_blank"><div class="contact">
-            <img src="img/github.svg" height="30px">
-            <span>Github</span>
-        </div></a>
-
-        <a href="http://pt.linkedin.com/in/pandrefreitas" target="_blank">
-        <div class="contact">
-            <img src="img/linkedin.svg" height="30px">
-            <span>Linkedin</span>
-        </div></a>
-    </div>
-</div>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-39183205-1', 'auto');
-  ga('send', 'pageview');
-</script>
-
-</body>
-</html>

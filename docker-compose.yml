@@ -1,15 +1,9 @@
 version: "3.8"
 services:
   site:
-    image: nginx:1.19.9
-    volumes:
-      - "./:/usr/share/nginx/html"
-    ports:
-      - 80
-  builder:
-    build: 
+    build:
       context: .
-      dockerfile: Dockerfile.builder
     volumes:
       - "./:/site"
-    command: sass --watch styles.sass:styles.css --style compressed
+    ports:
+      - "4000:4000"
